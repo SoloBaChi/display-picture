@@ -1,0 +1,42 @@
+.header-wrapper{
+background:url("../images/headerbg-image.png") center / cover no-repeat #010216;
+}
+.header-wrapper.index-page{
+padding:0;
+}
+.navigation-container{
+background:rgba(1,2,22,0.7);
+padding:3.3rem 0rem;
+}
+
+
+
+
+
+
+
+/*********************
+Desktop dveice
+**********************/
+@media(min-width:650px){
+.main-nav .nav-menu{
+gap:3%;
+}
+.main-nav li:nth-child(4){
+margin-right:4%;
+}
+.main-nav a{
+display:block;
+padding:0.6rem;
+border-radius:8px;
+transition:0.5s ease-in;
+border:1px solid rgba(255,255,255,0.1);
+}
+.main-nav a:hover{
+background:#010216;
+border:1px solid #fff;
+}
+/*.main-nav li:nth-child(4) + li a{
+border-right:1px solid #fff;
+}*/
+}
