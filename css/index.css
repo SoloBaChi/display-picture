@@ -73,3 +73,54 @@ transition:background 0.5s;
 .cta-buttons .cta-btn:hover{
  background:#010216;
 }
+
+
+/*************************
+  quick nav-links section
+**************************/
+.quick-nav-links{
+ 
+}
+.quick-nav-links a{
+color:#99509A;
+}
+
+/*************************
+  Create section
+**************************/
+.create-section .create-header{
+justify-content:flex-start;
+align-items:center;
+gap:1%;
+margin:1rem 0;
+}
+/*.create-section .create-header > *{
+flex:50%;
+}*/
+.create-section .create-header .line{
+display:block;
+border-bottom:9px solid #FED3FF;
+flex-basis:70%;
+}
+.create-section .create-body{
+justify-content:space-around;
+}
+.create-section .create-body .box{
+height:150px;
+background:rgba(209, 0, 214, 0.61);
+-moz-box-shadow: 0px 4px 29px #EECEEF;
+-webkit-box-shadow: 0px 4px 29px #EECEEF;
+box-shadow: 0px 4px 29px #EECEEF;
+flex-basis:22%;
+margin-bottom:1rem;
+}
+.create-section .create-footer{
+text-align:initial;
+margin:2rem 0;
+border-radius: 11px;
+-moz-box-shadow: 0px 4px 29px #EECEEF;
+-webkit-box-shadow: 0px 4px 29px #EECEEF;
+box-shadow: 0px 4px 29px #EECEEF;
+padding:1rem;
+height:150px;
+}
