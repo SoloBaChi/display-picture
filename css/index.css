@@ -62,6 +62,9 @@ font-weight:300;
 line-height:1.5;
 text-transform:capitalize;
 }
+.cta-buttons{
+padding:1rem;
+}
 .cta-buttons .cta-btn{
 background: linear-gradient(94.58deg, rgba(254, 211, 255, 0.138) 1.24%, rgba(254, 211, 255, 0.3) 1.25%, rgba(245, 90, 249, 0.084) 98.94%);
 backdrop-filter: blur(60px);
@@ -82,6 +85,28 @@ transition:background 0.5s;
  
 }
 .quick-nav-links a{
+color:#99509A;
+font-size:var(--md-font);
+font-weight:500;
+display:block;
+margin-bottom:1rem;
+padding:0.7rem;
+-webkit-padding:0.7rem;
+background: linear-gradient(94.58deg, rgba(254, 211, 255, 0.469) 1.24%, rgba(254, 211, 255, 0.7) 1.25%, rgba(245, 90, 249, 0.196) 98.94%);
+backdrop-filter: blur(60px);
+/* Note: backdrop-filter has minimal browser support */
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+transition:all 0.5s;
+-webkit-border:1px solid transparent;
+border:1px solid transparent;
+}
+.quick-nav-links a:hover{
+-webkit-border:1px solid #99509A;
+-moz-border:1px solid #99509A;
+border:1px solid #99509A;
+background:#FFFFFF;
 color:#99509A;
 }
 
