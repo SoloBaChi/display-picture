@@ -1,22 +1,25 @@
 @import url("boiler-plate.css");
 @import url("header.css");
+@import url("signup.css");
+@import url("signin.css");
 @import url("footer.css");
 
 /******************
 index page styles
 ******************/
-
+.search-menu{
+padding:1rem;
+}
 .search-input-container{
 position:relative;
 border:1px solid #ddd;
-width:40%;
 margin:0 auto;
-border-radius: 11px;
+border-radius:10px;
 /*padding:0.4rem;*/
 margin-top:2rem;
 }
 .search-input{
-border:2px solid red;
+border:1px solid red;
 width:85%;
 border:none;
 outline:none;
@@ -28,7 +31,8 @@ backdrop-filter: blur(61px);
 -moz-backdrop-filter: blur(61px);
 padding:0.8rem;
 text-indent:1rem;
-border-radius:10px 0 0 10px;
+border-radius:11px 0px 0px 11px;
+
 }
 .search-input::-webkit-search-cancel-button{
 -webkit-appearance:none;
@@ -82,18 +86,20 @@ transition:background 0.5s;
   quick nav-links section
 **************************/
 .quick-nav-links{
- 
+ text-align:center;
+}
+.quick-nav-links .nav-container ul li{
+margin-bottom:1rem;
 }
 .quick-nav-links a{
 color:#99509A;
 font-size:var(--md-font);
 font-weight:500;
 display:block;
-margin-bottom:1rem;
 padding:0.7rem;
 -webkit-padding:0.7rem;
 background: linear-gradient(94.58deg, rgba(254, 211, 255, 0.469) 1.24%, rgba(254, 211, 255, 0.7) 1.25%, rgba(245, 90, 249, 0.196) 98.94%);
-backdrop-filter: blur(60px);
+/*backdrop-filter: blur(60px);*/
 /* Note: backdrop-filter has minimal browser support */
 -moz-border-radius:7px;
 -webkit-border-radius:7px;
@@ -107,8 +113,8 @@ border:1px solid transparent;
 -moz-border:1px solid #99509A;
 border:1px solid #99509A;
 background:#FFFFFF;
-color:#99509A;
 }
+
 
 /*************************
   Create section
@@ -148,4 +154,82 @@ border-radius: 11px;
 box-shadow: 0px 4px 29px #EECEEF;
 padding:1rem;
 height:150px;
+}
+
+/*************************
+  gallery wrapper
+**************************/
+.gallery-wrapper{
+padding:2rem;
+}
+.gallery-wrapper .gallery{
+ height:150px;
+ background:#99509A;
+ margin-bottom:1rem;
+}
+
+
+
+
+
+
+
+
+
+/*************************
+ Tablet Device
+**************************/
+@media(min-width:380px){
+.search-menu{
+padding:0rem;
+}
+.quick-nav-links .nav-container ul{
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+}
+.quick-nav-links .nav-container ul > *{
+flex:1 1 48%;
+}
+.gallery-wrapper{
+display:flex;
+flex-flow:row wrap;
+justify-content:center;
+gap:4%;
+}
+.gallery-wrapper > *{
+flex:1 1 48%;
+}
+}
+
+
+
+
+
+
+/*************************
+ Desktop device
+**************************/
+@media(min-width:650px){
+.search-input-container{
+width:40%;
+}
+.quick-nav-links .nav-container ul{
+gap:0%;
+}
+.quick-nav-links .nav-container ul > *{
+flex:22%;
+}
+
+.quick-nav-links .nav-container ul li{
+padding:0 1rem;
+}
+.quick-nav-links .nav-container ul li + li{
+border-left:3px solid #afafaf;
+-webkit-border:3px solid #afafaf;
+-moz-border:3px solid #afafaf;
+}
+.gallery-wrapper > *{
+flex:0 0 22%;
+}
 }
