@@ -100,7 +100,6 @@ Desktop screen
 size
 ****************/
 @media(min-width:650px){
-.nav-menu,
 .flex,
 .flex-container
 {
@@ -109,5 +108,21 @@ flex-flow:row wrap;
 justify-content:center;
 gap:4%;
 align-items:flex-end;
+}
+}
+
+/***************
+media queries for
+Large Desktop screen 
+size
+****************/
+@media(min-width:810px){
+.nav-menu{
+display:flex;
+flex-flow:row wrap;
+justify-content:center;
+gap:4%;
+align-items:flex-end;
+	
 }
 }

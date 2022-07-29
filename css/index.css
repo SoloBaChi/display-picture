@@ -9,17 +9,16 @@ index page styles
 ******************/
 .search-menu{
 padding:1rem;
-}
+/*margin-top:4rem;
+*/}
 .search-input-container{
 position:relative;
 border:1px solid #ddd;
 margin:0 auto;
 border-radius:10px;
-/*padding:0.4rem;*/
-margin-top:2rem;
+margin-top:4rem;
 }
 .search-input{
-border:1px solid red;
 width:85%;
 border:none;
 outline:none;
@@ -32,7 +31,11 @@ backdrop-filter: blur(61px);
 padding:0.8rem;
 text-indent:1rem;
 border-radius:11px 0px 0px 11px;
-
+}
+.search-input:hover,
+.search-input:focus-within
+{
+background:#010216;
 }
 .search-input::-webkit-search-cancel-button{
 -webkit-appearance:none;
@@ -180,9 +183,6 @@ padding:2rem;
  Tablet Device
 **************************/
 @media(min-width:380px){
-.search-menu{
-padding:0rem;
-}
 .quick-nav-links .nav-container ul{
 display:flex;
 flex-flow:row wrap;
